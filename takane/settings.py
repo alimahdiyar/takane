@@ -42,7 +42,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'takane_project.urls'
+ROOT_URLCONF = 'takane.urls'
 
 TEMPLATES = [
     {
@@ -60,7 +60,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'takane_project.wsgi.application'
+WSGI_APPLICATION = 'takane.wsgi.application'
 
 
 # Database
@@ -110,7 +110,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'takane_project/static')
+    os.path.join(BASE_DIR, 'takane/static')
 ]
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 

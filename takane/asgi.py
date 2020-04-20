@@ -1,5 +1,5 @@
 """
-ASGI config for takane_project project.
+ASGI config for takane project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'takane_project.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'takane.settings')
 
 application = get_asgi_application()
