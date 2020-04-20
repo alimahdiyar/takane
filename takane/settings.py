@@ -15,7 +15,7 @@ SECRET_KEY = '3qdnaygxmdsl$-lf12mq!3y8(r^gou#ih2-h9j4z7n1!wi#wk*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.takane-team.ir']
 
 
 # Application definition
@@ -109,11 +109,12 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'takane/static')
 ]
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_URL = '/static/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 MEDIA_URL='/media/'
